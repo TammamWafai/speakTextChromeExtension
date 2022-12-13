@@ -1,14 +1,3 @@
-
-var timerID = setInterval(function() {
-     if(document.querySelector('._1qfi0x77.pii-hide')){
-        document.querySelector('._1qfi0x77.pii-hide').remove();
-        
-     }else{
-        console.log('not found!');
-     }
- },  5000);    
-
-
 var oldText="";
 var textInterval = setInterval(function() {
      var msg = new SpeechSynthesisUtterance();
