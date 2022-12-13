@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Speak text",
+  "version": "1.0.1",
+  "description": "text to speech",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [{
+    "matches": ["https://www.coursera.org/learn/*"],
+    "js": ["background.js"]
+  }],
+  "permissions": ["<all_urls>", "webRequest", "webRequestBlocking", "storage", "cookies", "activeTab", "tabs"]
+}
