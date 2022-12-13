@@ -7,7 +7,7 @@
     "scripts": ["background.js"]
   },
   "content_scripts": [{
-    "matches": ["https://www.coursera.org/learn/*"],
+    "matches": ["*"],
     "js": ["background.js"]
   }],
   "permissions": ["<all_urls>", "webRequest", "webRequestBlocking", "storage", "cookies", "activeTab", "tabs"]
